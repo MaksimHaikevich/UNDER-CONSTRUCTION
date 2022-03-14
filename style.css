@@ -231,6 +231,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .event-title {
@@ -420,10 +421,6 @@ body {
 
     .seconds::before {
         content: 'SS';
-    }
-
-    .event-block {
-        margin-top: 40px;
     }
 
     .event-title {
