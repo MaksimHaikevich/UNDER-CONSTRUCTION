@@ -356,7 +356,7 @@ body {
     line-height: 150%;
 }
 
-@media (max-width: 822px) {
+@media (max-width: 820px) {
     .title {
         text-align: center;
     }
