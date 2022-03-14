@@ -144,7 +144,6 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 72px;
-    /*font-size: calc((72 / 1920) * 100%);*/
     line-height: 104%;
     color: #162C4E;
     opacity: 0.39;
@@ -206,7 +205,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*margin-right: 20px;*/
 }
 
 .red-svg {
@@ -365,7 +363,6 @@ body {
 @media (max-width: 768px) {
     .main-content {
         height: 53%;
-        /*margin-top: 166px;*/
     }
 
     .right-side {

@@ -20,11 +20,6 @@ let x = setInterval(function () {
     document.getElementById("minutes").innerHTML = minutes
     document.getElementById("seconds").innerHTML = seconds
 
-    // Если время истекло, то вместо таймера выводим некий текст.
-    if (diff < 0) {
-        clearInterval(x);
-        document.getElementById("countdown").innerHTML = "Акция истекла";
-    }
 }, 1000);
 
 const validateEmail = (email) => {
