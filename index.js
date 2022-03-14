@@ -60,7 +60,7 @@ const send = () => {
         email: $('#email').val()
     };
     fetch('', {method: "POST", body: JSON.stringify(data)})
-    $popup.css('display', 'flex')
+    // $popup.css('display', 'flex')
 }
 
 $('#send-data').on('click', send)
