@@ -61,7 +61,7 @@ const send = (e) => {
     const data = {
         email: $('#email').val()
     };
-    // fetch('', {method: "POST", body: JSON.stringify(data)})
+    fetch('', {method: "POST", body: JSON.stringify(data)})
     $popup.css('display', 'flex')
 }
 
