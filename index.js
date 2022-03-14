@@ -54,13 +54,15 @@ const validate = () => {
 
 $('#email').on('input', validate);
 
-const send = () => {
+const send = (e) => {
+
+    e.preventDefault()
     const $popup = $('#popup')
     const data = {
         email: $('#email').val()
     };
-    fetch('', {method: "POST", body: JSON.stringify(data)})
-    // $popup.css('display', 'flex')
+    // fetch('', {method: "POST", body: JSON.stringify(data)})
+    $popup.css('display', 'flex')
 }
 
 $('#send-data').on('click', send)
