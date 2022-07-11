@@ -170,15 +170,25 @@ body {
 .counter-element {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    margin-right: 5px;
+    /*justify-content: center;*/
+}
+
+.count {
+    width: 100%;
+    font-weight: 600;
+    font-size: 72px;
+    color: #162C4E;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.count {
-    font-weight: 600;
-    font-size: 72px;
-    color: #162C4E;
-}
+/*.counter-element:not(:last-child) .count::after {*/
+/*    content: ":";*/
+/*    padding: 0 10%;*/
+/*}*/
 
 .days::before {
     content: 'Days';
@@ -272,7 +282,7 @@ body {
     justify-content: space-between;
     padding: 0 8px 0 27px;
     margin-bottom: 10px;
-    width: 440px;
+    width: 25%;
     height: 59px;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -288,17 +298,16 @@ body {
 
 .email-form input {
     font-size: 18px;
-    width: 290px;
+    width: 80%;
 }
 
 .send-email {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 43px;
-    height: 43px;
     border-radius: 50%;
     background: #DF2224;
+    padding: 15px;
 }
 
 .b-popup {
@@ -355,13 +364,26 @@ body {
     line-height: 150%;
 }
 
-@media (max-width: 820px) {
+@media screen and (max-width: 1440px) {
     .title {
+        font-size: 62px;
         text-align: center;
+    }
+
+    .email-form {
+        width: 40%;
+    }
+
+    .email-form input {
+        font-size: 15px;
+    }
+
+    .send-email {
+        padding: 10px;
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .main-content {
         height: 53%;
     }
@@ -433,7 +455,7 @@ body {
 
     .email-form {
         font-size: 14px;
-        width: 360px;
+        width: 55%;
         height: 41px;
     }
 
@@ -441,7 +463,8 @@ body {
         width: 33px;
         height: 33px;
     }
-    .event-block-wrapper{
+
+    .event-block-wrapper {
         margin-top: 30px;
     }
 }
@@ -453,7 +476,7 @@ body {
 
     .right-side {
         transform: matrix(0.09, -1, -1, -0.09, 0, 0);
-        top: -34px;
+        top: -45px;
         width: calc((270 / 575) * 100%);
     }
 
@@ -469,7 +492,7 @@ body {
     }
 
     .title {
-        width: 320px;
+        width: 350px;
         height: 74px;
         word-wrap: break-word;
         text-align: center;
@@ -477,6 +500,10 @@ body {
 
     .second-text {
         margin-top: 16px;
+    }
+
+    .email-form {
+        width: 65%;
     }
 }
 
